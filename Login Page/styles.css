@@ -1,0 +1,186 @@
+/**
+ * Color Palette Description:
+ * 
+ * #ECE3CE - Light Beige: Used for the main background of the page for a clean, neutral look.
+ * #739072 - Medium Green: Applied to buttons, tabs, and links for a natural, calming effect.
+ * #4F6F52 - Dark Green: Used for hover states on buttons and tabs, providing a deeper contrast.
+ * #3A4D39 - Even Darker Green: Utilized for active states on tabs, offering the strongest contrast.
+ * 
+ * This palette creates a natural and harmonious color scheme, suitable for a serene and focused user experience.
+ */
+
+body {
+    font-family: 'Piazzolla', serif;
+    background: linear-gradient(135deg, #ECE3CE 0%, #8CA088 25%, #6B8574 50%, #546E5A 75%);
+    color: #4F6F52;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    border: 3px solid #5C6E5A;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 500px;
+    width: auto;
+}
+
+.image-container, .login-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container {
+    width: 300px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 80%;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tab {
+    background-color: #739072;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.tab:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.tab:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.tab:hover {
+    background-color: #4F6F52;
+}
+
+.tab.active {
+    background-color: #3A4D39;
+    color: white;
+}
+
+#login, #register {
+    display: none;
+}
+
+#login h1, #register h1 {
+    color: #4F6F52;
+}
+
+#loginForm, #registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#registerForm input[type="text"],
+#registerForm input[type="password"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ECE3CE;
+}
+
+#loginForm button, #registerForm button {
+    padding: 10px;
+    background-color: #739072;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#loginForm button:hover, #registerForm button:hover {
+    background-color: #4F6F52;
+}
+
+#loginForm a, #registerForm a {
+    color: #739072;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.tabcontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.password-section {
+    position: relative;
+    width: 100%;
+}
+
+.forgot-password-link {
+    font-size: 0.8em;
+    color: #739072;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    margin-right: 60px;
+}
+
+/* Title of the Game */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.game-title {
+    font-family: 'Pridi', cursive;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #3A4D39;
+}
